@@ -9,7 +9,7 @@ read NUMBER
 #   echo "Given number $NUMBER is not prime number"
 #fi
 
-if [ $(($NUMBER % $NUMBER)) -gt 1 ]; then
+if [ $(($NUMBER % $NUMBER)) -eq 1 ]; then
     echo "Given number $NUMBER is prime number"
 else
     echo "Given number $NUMBER is not prime number"
