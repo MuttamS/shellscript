@@ -7,3 +7,8 @@ if [ $NUMBER -lt 10 ]; then
 else
     echo "Given number $NUMBER is grater then or equal to 10"
 fi
+
+#lt - less then
+#gt - grater then
+#el - equl
+#ne - not equal
