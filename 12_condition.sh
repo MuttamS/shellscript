@@ -12,5 +12,5 @@ read NUMBER
 if [ $(($NUMBER % $NUMBER)) -gt 1 ]; then
     echo "Given number $NUMBER is prime number"
 else
-    echo "Given number $NUMBER is prime number"
+    echo "Given number $NUMBER is not prime number"
 fi
