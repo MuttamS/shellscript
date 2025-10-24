@@ -9,7 +9,7 @@ fi
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "ERROR:: Intalling mysql is failure"
+    echo "ERROR:: Installing mysql is failure"
 else
-    echo "ERROR:: Intalling mysql is success"
+    echo "Installing mysql is success"
 fi
