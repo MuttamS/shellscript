@@ -10,7 +10,7 @@ fi
 dnf remove mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "ERROR:: Installing mysql is failure"
+    echo "ERROR:: removing mysql is failure"
 else
-    echo "Installing mysql is success"
+    echo "removed mysql is successfull"
 fi
