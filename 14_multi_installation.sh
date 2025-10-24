@@ -26,8 +26,8 @@ fi
 dnf install mongodb-mongosh -y
 
 if [ $? -ne 0 ]; then 
-    echo "ERROR:: Installing ongodb-mongosh is failure"
+    echo "ERROR:: Installing mongodb-mongosh is failure"
 else
-    echo "Installing ongodb-mongosh is seccuss"
+    echo "Installing mongodb-mongosh is seccuss"
 fi
 
