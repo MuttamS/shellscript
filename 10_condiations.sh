@@ -8,3 +8,4 @@ if [ $NUMBER -lt 10 ]; then
 
 else
     echo "Given number $NUMBER is greater then or equal to 10"
+if
