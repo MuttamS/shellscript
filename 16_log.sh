@@ -16,8 +16,7 @@ echo "Script started executed at: $(date)"
 if [ $USERID -ne 0 ]; then
     echo -e "$R ERROR $N:: Please run the script with root previlages"
     exit 1
-
-
+fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
