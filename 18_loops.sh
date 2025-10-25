@@ -26,6 +26,7 @@ VALIDATE() {
     else
         echo -e "Installing $2... $G SUCCESS $N" | tee -a $LOG_FILE
     fi
+}
 
 for package in $@
 do
