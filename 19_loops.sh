@@ -30,8 +30,9 @@ VALIDATE() {
 
 for package in $@
 do
+    # check the package already installed or not
     dnf list installed $package &>>LOG_FILE
-
+    # if exit status is 0, already installed, -ne 0 need to installed
     if [ $? -ne 0 ]; then
         dnf install $package -y &>>LOG_FILE
         VALIDATE $? "$package"
