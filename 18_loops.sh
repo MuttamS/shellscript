@@ -15,7 +15,7 @@ mkdir -p $LOG_FOLDER
 echo "Script started executed at: $(date)"  | tee -a $LOG_FILE
 
 if [ $USERID -ne 0 ]; then
-    echo -e "$R ERROR $N:: Please run the script with root previlages"
+    echo -e "ERROR:: Please run the script with root previlages"
     exit 1
 fi
 
@@ -36,6 +36,6 @@ do
         dnf install $package -y &>>LOG_FILE
         VALIDATE $? "$package"
     else
-    echo "$package is already installed....$Y SKIPPED $0"
+    echo -e "$package is already installed....$Y SKIPPED $0"
     fi    
 done
